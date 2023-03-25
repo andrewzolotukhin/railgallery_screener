@@ -1,0 +1,12 @@
+services:
+  server:
+    build: 
+      dockerfile: Dockerfile
+      context: .
+    volumes:
+      - ./state:/home/pptruser/state
+      - ./screenshots:/home/pptruser/screenshots
+    restart: always
+volumes:
+  state:
+  config:
